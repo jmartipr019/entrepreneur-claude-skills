@@ -1,8 +1,10 @@
 # Entrepreneur Claude Skills
 
+> **This is a fork of [mfwarren/entrepreneur-claude-skills](https://github.com/mfwarren/entrepreneur-claude-skills)**, created and authored by Matt Warren. All skills, documentation, and the lead-magnet playbook are his work, used under the MIT license. The upstream repository is the canonical source — install commands below intentionally point there, and issues or contributions belong upstream.
+
 Production-ready skill packages for Claude Code and AI coding agents. The best-of-the-best skills for building, growing, and scaling a business — curated by a founder who uses AI to run his own company.
 
-**24 skills across 6 categories** | **Built for founders, by a founder** | **Works with Claude Code, Cursor, Windsurf, and more**
+**25 skills across 6 categories** | **Built for founders, by a founder** | **Works with Claude Code, Cursor, Windsurf, and more**
 
 > **Free Playbook:** [The AI Founder's Playbook](https://www.mattwarren.co/ai-founder-playbook/) — How to launch a product in a weekend using these skills. Step-by-step, idea to live product in 48 hours. [Get it free →](https://www.mattwarren.co/ai-founder-playbook/)
 
@@ -12,7 +14,7 @@ Most AI skill collections are written by prompt engineers. These are written by 
 
 ## Categories
 
-### Marketing & Growth (5 skills)
+### Marketing & Growth (6 skills)
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [copywriting](skills/marketing-growth/copywriting/) | Direct response copy, landing pages, ads, and email sequences using proven frameworks (PAS, AIDA, BAB) | ✅ Ready |
@@ -20,6 +22,19 @@ Most AI skill collections are written by prompt engineers. These are written by 
 | [email-campaigns](skills/marketing-growth/email-campaigns/) | Welcome sequences, launch campaigns, re-engagement flows, and segmentation strategy | ✅ Ready |
 | [social-media](skills/marketing-growth/social-media/) | Platform-native content for Twitter/X, LinkedIn, and Instagram with scheduling | ✅ Ready |
 | [paid-ads](skills/marketing-growth/paid-ads/) | Meta Ads, Google Ads creative and copy. A/B test variants and performance analysis | ✅ Ready |
+| [MetaAds](skills/marketing-growth/MetaAds/) | Publish, manage, and analyze live Meta campaigns via the Marketing API. Requires setup — see note below | ⚠️ Needs setup |
+
+> **MetaAds install note.** Unlike the other skills, MetaAds spends real ad budget and needs
+> Meta Marketing API credentials — walk through `skills/marketing-growth/MetaAds/workflows/Setup.md`
+> first. It also resolves its workflows and Python tools via absolute `~/.claude/skills/MetaAds/`
+> paths, so it currently only works when that directory is copied to your home directory:
+>
+> ```bash
+> cp -r skills/marketing-growth/MetaAds ~/.claude/skills/
+> ```
+>
+> Installing it via the plugin marketplace will load `SKILL.md` but its internal routing will
+> not resolve.
 
 ### Sales & Revenue (4 skills)
 | Skill | Description | Status |
@@ -123,14 +138,22 @@ You: "Build an SOP for our customer onboarding process"
 
 ## Skill Format
 
-Every skill uses a consistent structure:
+Every skill is a directory containing a `SKILL.md` — a YAML frontmatter block plus the
+workflow prompt. That single file is all a skill needs:
 
 ```
 skills/category/skill-name/
-├── SKILL.md          # Core skill file (YAML frontmatter + prompts)
-├── README.md         # Skill documentation and examples
-├── examples/         # Example inputs and outputs
-└── references/       # Frameworks, templates, supporting material
+└── SKILL.md          # Core skill file (YAML frontmatter + prompts)
+```
+
+Skills may add supporting files alongside it when the workflow calls for them. `MetaAds`
+is the only one that currently does:
+
+```
+skills/marketing-growth/MetaAds/
+├── SKILL.md          # Frontmatter + workflow routing
+├── tools/            # Python scripts invoked by the workflows
+└── workflows/        # Setup, PublishCampaign, AnalyzePerformance
 ```
 
 ### SKILL.md Frontmatter

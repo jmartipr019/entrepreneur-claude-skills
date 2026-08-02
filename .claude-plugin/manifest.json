@@ -50,6 +50,13 @@
       "status": "production"
     },
     {
+      "name": "metaads",
+      "path": "skills/marketing-growth/MetaAds/SKILL.md",
+      "category": "marketing-growth",
+      "version": "1.0.0",
+      "status": "production"
+    },
+    {
       "name": "offer-creation",
       "path": "skills/sales-revenue/offer-creation/SKILL.md",
       "category": "sales-revenue",
