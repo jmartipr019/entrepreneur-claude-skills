@@ -8,7 +8,7 @@
 /plugin marketplace add mfwarren/entrepreneur-claude-skills
 ```
 
-This installs all 24 skills and keeps them updated.
+This installs all 25 skills and keeps them updated.
 
 ### npx Skills CLI
 

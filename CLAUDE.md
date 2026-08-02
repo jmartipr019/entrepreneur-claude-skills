@@ -10,4 +10,6 @@ When a user's request matches a skill's `activation_triggers`, load the correspo
 
 - `skills/` — All skill packages organized by category
 - `docs/` — Installation guides, contributing guidelines, skill format spec
-- Each skill contains: `SKILL.md` (core), `README.md` (docs), `examples/`, `references/`
+- Each skill contains a `SKILL.md` (YAML frontmatter + workflow). Skills may add
+  supporting files when needed — `marketing-growth/MetaAds` adds `tools/` and
+  `workflows/`; the other 24 are a single `SKILL.md` each.
