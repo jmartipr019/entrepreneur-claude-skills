@@ -24,17 +24,11 @@ Most AI skill collections are written by prompt engineers. These are written by 
 | [paid-ads](skills/marketing-growth/paid-ads/) | Meta Ads, Google Ads creative and copy. A/B test variants and performance analysis | ✅ Ready |
 | [MetaAds](skills/marketing-growth/MetaAds/) | Publish, manage, and analyze live Meta campaigns via the Marketing API. Requires setup — see note below | ⚠️ Needs setup |
 
-> **MetaAds install note.** Unlike the other skills, MetaAds spends real ad budget and needs
-> Meta Marketing API credentials — walk through `skills/marketing-growth/MetaAds/workflows/Setup.md`
-> first. It also resolves its workflows and Python tools via absolute `~/.claude/skills/MetaAds/`
-> paths, so it currently only works when that directory is copied to your home directory:
->
-> ```bash
-> cp -r skills/marketing-growth/MetaAds ~/.claude/skills/
-> ```
->
-> Installing it via the plugin marketplace will load `SKILL.md` but its internal routing will
-> not resolve.
+> **MetaAds setup note.** Unlike the other skills, MetaAds talks to a live API and spends real
+> ad budget, so it needs Meta Marketing API credentials before it can do anything — walk through
+> `skills/marketing-growth/MetaAds/workflows/Setup.md` first. It also requires `uv` on PATH to
+> run its Python tools. Its internal paths are relative to the skill directory, so it works from
+> any install location.
 
 ### Sales & Revenue (4 skills)
 | Skill | Description | Status |

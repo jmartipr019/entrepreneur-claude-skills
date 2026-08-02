@@ -24,7 +24,7 @@
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --check
+uv run tools/Publish.py --check
 ```
 
 **Expected Outcomes:**
@@ -40,7 +40,7 @@ uv run ~/.claude/skills/MetaAds/tools/Publish.py --check
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --upload-images ./path/to/images/
+uv run tools/Publish.py --upload-images ./path/to/images/
 ```
 
 **Notes:**
@@ -166,7 +166,7 @@ Interest targeting (optional — broad often outperforms):
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --publish path/to/config.json
+uv run tools/Publish.py --publish path/to/config.json
 ```
 
 **What happens:**
@@ -198,7 +198,7 @@ uv run ~/.claude/skills/MetaAds/tools/Publish.py --publish path/to/config.json
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --status CAMPAIGN_ID
+uv run tools/Publish.py --status CAMPAIGN_ID
 ```
 
 ---
@@ -209,12 +209,12 @@ uv run ~/.claude/skills/MetaAds/tools/Publish.py --status CAMPAIGN_ID
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --resume CAMPAIGN_ID
+uv run tools/Publish.py --resume CAMPAIGN_ID
 ```
 
 **Post-activation guidance for the user:**
 - Don't touch it for 24-48 hours — let Meta's algorithm learn
-- Check metrics with `~/.claude/skills/MetaAds/tools/Analytics.py --campaign CAMPAIGN_ID` after day 2
+- Check metrics with `tools/Analytics.py --campaign CAMPAIGN_ID` after day 2
 - Meta's learning phase needs ~50 conversions in 7 days to optimize fully
 - Don't increase budget more than 20-30% at a time (resets learning)
 - If no spend after 48 hours: try switching optimization to Link Clicks temporarily

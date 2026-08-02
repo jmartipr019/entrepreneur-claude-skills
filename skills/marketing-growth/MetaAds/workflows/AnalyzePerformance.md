@@ -22,7 +22,7 @@
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --summary --period 7
+uv run tools/Analytics.py --summary --period 7
 ```
 
 **What you see:**
@@ -48,7 +48,7 @@ uv run ~/.claude/skills/MetaAds/tools/Analytics.py --summary --period 7
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --campaigns --period 7
+uv run tools/Analytics.py --campaigns --period 7
 ```
 
 **Analysis points:**
@@ -65,7 +65,7 @@ uv run ~/.claude/skills/MetaAds/tools/Analytics.py --campaigns --period 7
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --campaign CAMPAIGN_ID --period 14
+uv run tools/Analytics.py --campaign CAMPAIGN_ID --period 14
 ```
 
 **Analysis points:**
@@ -82,7 +82,7 @@ uv run ~/.claude/skills/MetaAds/tools/Analytics.py --campaign CAMPAIGN_ID --peri
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --ads --period 7
+uv run tools/Analytics.py --ads --period 7
 ```
 
 **Analysis points:**
@@ -99,7 +99,7 @@ uv run ~/.claude/skills/MetaAds/tools/Analytics.py --ads --period 7
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --audience --period 7
+uv run tools/Analytics.py --audience --period 7
 ```
 
 **Analysis points:**
@@ -141,7 +141,7 @@ uv run ~/.claude/skills/MetaAds/tools/Analytics.py --audience --period 7
 
 **Actions:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --sync --period 30
+uv run tools/Analytics.py --sync --period 30
 ```
 
 Data saved to `Analytics/meta-ads/` for use with growth dashboard and content analysis scripts.
@@ -171,7 +171,7 @@ Data saved to `Analytics/meta-ads/` for use with growth dashboard and content an
 - Try a longer --period
 
 **API errors:**
-- Verify credentials with `uv run ~/.claude/skills/MetaAds/tools/Publish.py --check`
+- Verify credentials with `uv run tools/Publish.py --check`
 - Rate limiting is handled automatically with exponential backoff
 - If persistent, wait 15 minutes and retry
 

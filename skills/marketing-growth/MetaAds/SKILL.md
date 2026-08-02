@@ -12,30 +12,49 @@ description: |
   or needs to publish, manage, or analyze paid Meta advertising campaigns.
 ---
 
+## Path Resolution (SYSTEM PROMPT)
+
+**All `tools/` and `workflows/` paths in this skill are relative to the directory containing
+this SKILL.md.** Resolve them against that directory — wherever the skill happens to be
+installed — never against the user's current working directory.
+
+Determine the skill directory once, then use it for every command below. If this file is at
+`~/.claude/skills/MetaAds/SKILL.md`, then `uv run tools/Publish.py --check` means:
+
+```bash
+uv run ~/.claude/skills/MetaAds/tools/Publish.py --check
+```
+
+Do not assume an install location. This skill works under `~/.claude/skills/`, a plugin
+directory, or a repository checkout.
+
+Note that `.env` is the exception: the tools load credentials from the **current working
+directory**, not the skill directory, so run them from the project the campaign belongs to.
+
 ## Workflow Routing (SYSTEM PROMPT)
 
 **CRITICAL: Route to the correct workflow based on user intent.**
 
 **When user needs to set up or configure Meta Ads API access:**
 Examples: "set up meta ads", "connect meta ads", "configure facebook ads", "my token expired", "meta ads setup", credential errors from --check
--> **READ:** ~/.claude/skills/MetaAds/workflows/Setup.md
+-> **READ:** workflows/Setup.md
 -> **EXECUTE:** Walk user through complete setup (Business Manager, App, token, .env)
 
 **When user wants to publish, create, or launch a campaign:**
 Examples: "publish ads", "create campaign", "launch campaign", "upload ad images", "publish meta ads", "push this campaign to Meta", "create ad set"
--> **READ:** ~/.claude/skills/MetaAds/workflows/PublishCampaign.md
+-> **READ:** workflows/PublishCampaign.md
 -> **EXECUTE:** Campaign publishing workflow
 -> If credentials fail, route to Setup.md first
 
 **When user wants to check performance, metrics, or analyze results:**
 Examples: "check meta ad performance", "ROAS", "which ad is winning", "ad spend", "campaign metrics", "how are my ads doing", "audience breakdown", "creative performance"
--> **READ:** ~/.claude/skills/MetaAds/workflows/AnalyzePerformance.md
+-> **READ:** workflows/AnalyzePerformance.md
 -> **EXECUTE:** Performance analysis workflow
 -> If credentials fail, route to Setup.md first
 
 **When user wants to manage campaigns (pause/resume/status):**
 Examples: "pause campaign", "resume campaign", "campaign status", "list campaigns"
--> Use `uv run ~/.claude/skills/MetaAds/tools/Publish.py` directly with --pause, --resume, --status, or --list
+-> Use `uv run tools/Publish.py` directly with --pause, --resume, --status, or --list
 
 ---
 
@@ -114,8 +133,8 @@ Run scripts directly from the skill directory. They load `.env` from the current
 
 ```bash
 # From your project root (where .env lives):
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --check
-uv run ~/.claude/skills/MetaAds/tools/Analytics.py --summary
+uv run tools/Publish.py --check
+uv run tools/Analytics.py --summary
 ```
 
 **Prerequisites:** `uv` must be installed. If not: `curl -LsSf https://astral.sh/uv/install.sh | sh`
@@ -291,7 +310,7 @@ Skill Response:
 User: "Pause campaign 12345678"
 
 Skill Response:
-1. Runs `uv run ~/.claude/skills/MetaAds/tools/Publish.py --pause 12345678`
+1. Runs `uv run tools/Publish.py --pause 12345678`
 2. Confirms campaign is paused
 
 ---

@@ -25,7 +25,7 @@ The Python scripts run directly from the skill's `tools/` directory — no copy 
 
 **Verify scripts are accessible:**
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --setup
+uv run tools/Publish.py --setup
 ```
 
 If this prints the setup guide, proceed to Part 1.
@@ -192,7 +192,7 @@ FACEBOOK_APP_SECRET=your_app_secret
 
 Run the check command:
 ```bash
-uv run ~/.claude/skills/MetaAds/tools/Publish.py --check
+uv run tools/Publish.py --check
 ```
 
 **Expected successful output:**
