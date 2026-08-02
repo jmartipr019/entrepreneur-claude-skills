@@ -1,5 +1,13 @@
 ---
 name: cold-outreach
+description: |
+  Cold email and LinkedIn DM sequences aimed at people who have not opted
+  in — 3-5 touch sequences, subject lines, and personalization research. Enforces hard
+  limits: under 100 words per email, no "I hope this email finds you well".
+
+  USE WHEN user says "cold email", "cold outreach", "prospecting email", "outbound
+  sales", "cold DM", "reach out to", or needs a sequence for strangers.
+  NOT for emailing an existing subscriber list (use email-campaigns).
 version: 1.0.0
 category: Sales & Revenue
 domain: cold-outreach

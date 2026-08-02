@@ -1,5 +1,12 @@
 ---
 name: decision-frameworks
+description: |
+  Structured decision-making for a specific choice — reversibility
+  analysis, weighted scoring, and pre-mortems.
+
+  USE WHEN user says "help me decide", "should I", "decision framework", "pros and cons",
+  "trade-offs", "compare options", "weighted decision", "pre-mortem", "thinking through",
+  or is weighing a consequential decision.
 version: 1.0.0
 category: Leadership & Mindset
 domain: decision-making

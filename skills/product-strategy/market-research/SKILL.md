@@ -1,5 +1,13 @@
 ---
 name: market-research
+description: |
+  Market sizing (TAM/SAM/SOM), customer personas and ICP definition,
+  interview and survey design, and industry analysis.
+
+  USE WHEN user says "market research", "market size", "TAM SAM SOM", "target market",
+  "customer persona", "ICP", "ideal customer", "industry analysis", or needs to
+  understand a market they do not yet know.
+  NOT for analyzing named competitors (use competitive-analysis).
 version: 1.0.0
 category: Product & Strategy
 domain: market-research

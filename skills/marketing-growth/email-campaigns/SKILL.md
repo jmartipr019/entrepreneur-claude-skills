@@ -1,5 +1,13 @@
 ---
 name: email-campaigns
+description: |
+  Lifecycle email to an existing list — welcome sequences, launch campaigns,
+  drip flows, re-engagement, abandoned cart, and list segmentation.
+
+  USE WHEN user says "email campaign", "welcome sequence", "newsletter", "launch email",
+  "drip campaign", "re-engagement", "abandoned cart", or needs email sent to subscribers
+  who already opted in.
+  NOT for cold outbound to strangers (use cold-outreach).
 version: 1.0.0
 category: Marketing & Growth
 domain: email-marketing

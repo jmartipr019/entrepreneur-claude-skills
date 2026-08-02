@@ -1,5 +1,12 @@
 ---
 name: objection-handling
+description: |
+  Sales objection scripts, rebuttals, sales FAQs, and trust-building
+  content.
+
+  USE WHEN user says "objection handling", "sales objections", "overcome objections",
+  "why people don't buy", "handle pushback", "sales script", "FAQ for sales", or needs
+  answers to why a prospect is hesitating.
 version: 1.0.0
 category: Sales & Revenue
 domain: sales

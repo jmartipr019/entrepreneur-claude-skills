@@ -1,5 +1,13 @@
 ---
 name: competitive-analysis
+description: |
+  Competitor teardowns, SWOT, positioning maps, and differentiation
+  strategy against named rivals.
+
+  USE WHEN user says "competitive analysis", "competitor", "SWOT", "positioning",
+  "differentiation", "competitive landscape", "how do we compare", or names specific
+  companies to analyze.
+  NOT for sizing a market overall (use market-research).
 version: 1.0.0
 category: Product & Strategy
 domain: competitive-analysis

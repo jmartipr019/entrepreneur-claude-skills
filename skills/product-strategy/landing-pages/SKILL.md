@@ -1,5 +1,12 @@
 ---
 name: landing-pages
+description: |
+  Full landing page design — section-by-section wireframe, page copy, and
+  conversion rate optimization recommendations.
+
+  USE WHEN user says "landing page", "sign up page", "opt-in page", "conversion rate",
+  "CRO", "above the fold", "lead magnet page", or needs a whole page laid out.
+  NOT for standalone copy with no page structure (use copywriting).
 version: 1.0.0
 category: Product & Strategy
 domain: conversion-optimization

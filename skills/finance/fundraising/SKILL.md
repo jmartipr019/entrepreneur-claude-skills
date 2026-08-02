@@ -1,5 +1,13 @@
 ---
 name: fundraising
+description: |
+  Fundraising strategy — investor targeting, round structuring, term sheet
+  analysis, SAFEs, and convertible notes.
+
+  USE WHEN user says "fundraising", "raise money", "investor", "term sheet", "SAFE",
+  "convertible note", "venture capital", "angel investor", "seed round", or is planning a
+  raise.
+  Assumes venture fundraising; not built for debt, grants, or bootstrapped financing.
 version: 1.0.0
 category: Finance & Fundraising
 domain: fundraising

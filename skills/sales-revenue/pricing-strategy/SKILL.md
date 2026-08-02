@@ -1,5 +1,12 @@
 ---
 name: pricing-strategy
+description: |
+  Price levels and pricing models — value-based pricing, tiers, anchoring,
+  discounting, price sensitivity, and raise-price plans.
+
+  USE WHEN user says "pricing", "how to price", "price my product", "tiered pricing",
+  "pricing model", "raise prices", "discount strategy", or needs to choose a number.
+  NOT for deciding what the offer contains (use offer-creation).
 version: 1.0.0
 category: Sales & Revenue
 domain: pricing

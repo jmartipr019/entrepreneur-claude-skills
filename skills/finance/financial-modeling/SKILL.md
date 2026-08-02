@@ -1,5 +1,13 @@
 ---
 name: financial-modeling
+description: |
+  Whole-business financial models — revenue forecasts, expense models,
+  cash flow projections, runway, and scenario analysis.
+
+  USE WHEN user says "financial model", "revenue forecast", "financial projection", "cash
+  flow", "P&L", "profit and loss", "runway", "scenario analysis", "expense forecast", or
+  needs to project the finances of a business over time.
+  NOT for per-customer metrics (use unit-economics).
 version: 1.0.0
 category: Finance & Fundraising
 domain: financial-modeling

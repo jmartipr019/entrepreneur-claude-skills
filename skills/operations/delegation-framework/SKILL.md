@@ -1,5 +1,12 @@
 ---
 name: delegation-framework
+description: |
+  Task audits and delegation matrices — what to keep, delegate,
+  automate, or drop — plus handoff documentation.
+
+  USE WHEN user says "delegate", "what should I delegate", "task audit", "free up my
+  time", "outsource", "hire a VA", "hand off", or is trying to get work off their own
+  plate.
 version: 1.0.0
 category: Operations & Systems
 domain: delegation

@@ -1,5 +1,13 @@
 ---
 name: sop-builder
+description: |
+  Standard operating procedures for any repeatable process — prerequisites,
+  numbered steps, decision points, quality checklists, troubleshooting, and escalation
+  paths.
+
+  USE WHEN user says "create an SOP", "standard operating procedure", "document this
+  process", "runbook", "process documentation", "step by step guide", "how to guide",
+  "onboarding doc", or needs a process written down so someone else can run it.
 version: 1.0.0
 category: Operations & Systems
 domain: standard-operating-procedures
