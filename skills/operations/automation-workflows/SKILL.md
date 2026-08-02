@@ -1,5 +1,12 @@
 ---
 name: automation-workflows
+description: |
+  Audits manual work for automation opportunities and designs the
+  resulting workflows for Zapier, Make, or n8n.
+
+  USE WHEN user says "automate", "automation", "Zapier", "Make", "n8n", "workflow
+  automation", "repetitive task", "integrate", "save time", or describes doing the same
+  manual task repeatedly.
 version: 1.0.0
 category: Operations & Systems
 domain: automation

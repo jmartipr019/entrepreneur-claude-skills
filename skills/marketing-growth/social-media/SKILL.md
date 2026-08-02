@@ -1,5 +1,13 @@
 ---
 name: social-media
+description: |
+  Platform-native social posts and threads for Twitter/X, LinkedIn, and
+  Instagram, plus posting calendars.
+
+  USE WHEN user says "social media post", "tweet", "twitter thread", "LinkedIn post",
+  "Instagram caption", "social content", or needs short-form content written for a
+  specific platform's conventions.
+  NOT for long-form search content (use seo-content).
 version: 1.0.0
 category: Marketing & Growth
 domain: social-media

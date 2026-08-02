@@ -1,5 +1,12 @@
 ---
 name: founder-productivity
+description: |
+  Time and energy audits, deep work scheduling, and priority
+  frameworks for an overloaded schedule.
+
+  USE WHEN user says "productivity", "time management", "time audit", "deep work",
+  "prioritize", "overwhelmed", "too much to do", "focus", "energy management", or is
+  struggling to fit the work into the time available.
 version: 1.0.0
 category: Leadership & Mindset
 domain: productivity

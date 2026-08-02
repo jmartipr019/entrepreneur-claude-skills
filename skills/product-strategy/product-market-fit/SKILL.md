@@ -1,5 +1,13 @@
 ---
 name: product-market-fit
+description: |
+  Product-market fit measurement and validation — the Sean Ellis test,
+  PMF surveys, retention cohort analysis, and pivot decision frameworks.
+
+  USE WHEN user says "product market fit", "PMF", "Sean Ellis", "validate my idea", "do
+  people want this", "customer validation", "retention analysis", "pivot", or needs to
+  judge whether a product is working.
+  Assumes a startup context.
 version: 1.0.0
 category: Product & Strategy
 domain: product-market-fit

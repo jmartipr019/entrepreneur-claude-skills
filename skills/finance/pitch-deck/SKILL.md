@@ -1,5 +1,11 @@
 ---
 name: pitch-deck
+description: |
+  Investor pitch deck structure — narrative arc and slide-by-slide content.
+
+  USE WHEN user says "pitch deck", "investor deck", "fundraising deck", "seed deck",
+  "series A deck", "pitch to investors", or needs to present a company to investors.
+  Assumes venture fundraising; not built for lender, board, or internal presentations.
 version: 1.0.0
 category: Finance & Fundraising
 domain: pitch-deck

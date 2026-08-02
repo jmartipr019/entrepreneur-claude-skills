@@ -1,5 +1,14 @@
 ---
 name: copywriting
+description: |
+  Direct response marketing copy — headlines, value propositions, calls to
+  action, and body copy using the PAS, AIDA, and BAB frameworks.
+
+  USE WHEN user says "write copy", "marketing copy", "headline", "value proposition",
+  "tagline", "product description", "call to action", or needs persuasive copy for a
+  product or offer.
+  NOT for full page structure (use landing-pages), ad platform creative (use paid-ads),
+  or email sequences (use email-campaigns).
 version: 1.0.0
 category: Marketing & Growth
 domain: copywriting

@@ -1,5 +1,12 @@
 ---
 name: team-building
+description: |
+  Culture documents, team charters, values, 1-on-1 templates, feedback
+  frameworks, and onboarding plans.
+
+  USE WHEN user says "team building", "culture", "team charter", "team values", "one on
+  one", "1:1 template", "feedback", "onboarding", "team meeting", or needs to shape how a
+  team works together.
 version: 1.0.0
 category: Leadership & Mindset
 domain: team-building

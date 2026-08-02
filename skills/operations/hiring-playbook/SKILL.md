@@ -1,5 +1,12 @@
 ---
 name: hiring-playbook
+description: |
+  Job descriptions, interview question sets, scorecards, take-home
+  assignments, and evaluation rubrics.
+
+  USE WHEN user says "hire", "hiring", "job description", "job posting", "interview
+  questions", "interview scorecard", "take home assignment", "recruiting", or needs to
+  fill a role.
 version: 1.0.0
 category: Operations & Systems
 domain: hiring

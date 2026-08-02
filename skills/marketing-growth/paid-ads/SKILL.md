@@ -1,5 +1,13 @@
 ---
 name: paid-ads
+description: |
+  Ad creative and copy for Meta and Google — hooks, headlines, primary text,
+  and A/B test variants.
+
+  USE WHEN user says "ad copy", "Facebook ad copy", "Google ad", "ad creative", "ad
+  headline", "A/B test ads", or needs the words for a paid campaign.
+  This skill WRITES ads only. For publishing, pausing, or pulling performance data on
+  live Meta campaigns, use MetaAds instead.
 version: 1.0.0
 category: Marketing & Growth
 domain: paid-advertising

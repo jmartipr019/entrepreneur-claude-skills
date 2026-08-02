@@ -1,5 +1,13 @@
 ---
 name: seo-content
+description: |
+  SEO blog posts, keyword research, meta descriptions, and content calendars
+  aimed at ranking in organic search.
+
+  USE WHEN user says "SEO blog post", "write for SEO", "keyword research", "meta
+  description", "rank for", "organic traffic", "blog post about", or needs long-form
+  content built around search intent.
+  NOT for short-form social posts (use social-media).
 version: 1.0.0
 category: Marketing & Growth
 domain: seo-content

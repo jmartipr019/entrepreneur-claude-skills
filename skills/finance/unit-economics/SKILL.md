@@ -1,5 +1,13 @@
 ---
 name: unit-economics
+description: |
+  Per-customer economics — CAC, LTV, payback period, contribution margin,
+  churn, and break-even analysis.
+
+  USE WHEN user says "unit economics", "CAC", "LTV", "customer acquisition cost",
+  "lifetime value", "payback period", "contribution margin", "break even", "churn rate",
+  or asks whether each customer is profitable.
+  NOT for whole-company forecasts (use financial-modeling).
 version: 1.0.0
 category: Finance & Fundraising
 domain: unit-economics

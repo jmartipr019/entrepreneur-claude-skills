@@ -1,5 +1,13 @@
 ---
 name: offer-creation
+description: |
+  Offer construction using Hormozi's value equation and the $100M Offers
+  framework — value stacking, bonuses, guarantees, and risk reversal.
+
+  USE WHEN user says "create an offer", "irresistible offer", "grand slam offer", "value
+  stack", "package my service", "bundle my products", or needs to decide what goes into
+  an offer.
+  NOT for setting the price itself (use pricing-strategy).
 version: 1.0.0
 category: Sales & Revenue
 domain: offer-creation
